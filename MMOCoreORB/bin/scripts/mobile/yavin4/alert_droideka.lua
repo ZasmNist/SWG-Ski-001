@@ -11,7 +11,7 @@ alert_droideka = Creature:new {
 	baseHAM = 13183,
 	baseHAMmax = 15124,
 	armor = 1,
-	resists = {40,30,55,25,30,0,40,40,-1},
+	resists = {40,30,55,25,30,0,40,40,30},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -32,7 +32,7 @@ alert_droideka = Creature:new {
 			groups = {
 				{group = "geonosian_cubes", chance = 10000000}
 			},
-			lootChance = 1800000
+			lootChance = 2500000
 	    }	
 	},
 	defaultAttack = "creaturerangedattack",
