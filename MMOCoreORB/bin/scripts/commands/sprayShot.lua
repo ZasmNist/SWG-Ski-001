@@ -44,7 +44,7 @@
 SprayShotCommand = {
         name = "sprayshot",
 
-	damageMultiplier = 4.0,
+	damageMultiplier = 5.0,
 	speedMultiplier = 3.5,
 	healthCostMultiplier = 1,
 	actionCostMultiplier = 1,
@@ -83,9 +83,9 @@ SprayShotCommand = {
 		{}, 
 		{}, 
 		{ "force_defense" }, 
-		100, 
+		75, 
 		0, 
-		90 
+		60 
 	  )
 	},
 
