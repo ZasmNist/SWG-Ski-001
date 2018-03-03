@@ -44,12 +44,24 @@
 TorsoShotCommand = {
         name = "torsoshot",
 
-	damageMultiplier = 3.0,
-	speedMultiplier = 2.3,
+	damageMultiplier = 4.0,
+	speedMultiplier = 2.5,
 	healthCostMultiplier = 1,
 	actionCostMultiplier = 1,
 	mindCostMultiplier = 1,
-
+	
+	stateEffects = {
+	  StateEffect( 
+		INTIMIDATE_EFFECT, 
+		{}, 
+		{ "intimidate_defense", "resistance_states" }, 
+		{ "jedi_state_defense" }, 
+		50, 
+		0, 
+		30 
+	  )
+	},
+	
 	poolsToDamage = HEALTH_ATTRIBUTE,
 
 	animationCRC = hashCode("fire_3_special_single_light_face"),
@@ -62,7 +74,7 @@ TorsoShotCommand = {
 		{ "resistance_fire", "fire_resist" },
 		HEALTH,
 		true,
-		125,
+		200,
 		100,
 		30, 
 		30,
