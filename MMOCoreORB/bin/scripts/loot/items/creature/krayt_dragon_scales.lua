@@ -13,6 +13,7 @@ krayt_dragon_scales = {
 		{"kineticeffectiveness",2,8,10},
 		{"coldeffectiveness",2,8,10},
 		{"blasteffectiveness",2,8,10},
+		{"stuneffectiveness",2,8,10},
 		{"useCount",1,10,0},
 	},
 	customizationStringNames = {},
