@@ -66,7 +66,7 @@ stateEffects = {
 
 	combatSpam = "firelightningsingle1",
 
-	range = 30
+	range = 32
 }
 
 AddCommand(FireLightningSingle1Command)
