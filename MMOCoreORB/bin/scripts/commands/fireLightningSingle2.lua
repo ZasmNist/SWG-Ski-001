@@ -44,17 +44,38 @@
 FireLightningSingle2Command = {
         name = "firelightningsingle2",
 
-	damageMultiplier = 5.0,
+	damageMultiplier = 6.0,
 	speedMultiplier = 2.0,
 	healthCostMultiplier = 1,
 	actionCostMultiplier = 1,
 	mindCostMultiplier = 1,
 
+	stateEffects = {
+	StateEffect( 
+		STUN_EFFECT, 
+		{}, 
+		{ "stun_defense", "resistance_states" }, 
+		{ "jedi_state_defense" }, 
+		30, 
+		100, 
+		30 
+	  ),
+	StateEffect( 
+		INTIMIDATE_EFFECT, 
+		{}, 
+		{ "intimidate_defense", "resistance_states" }, 
+		{ "jedi_state_defense" }, 
+		50, 
+		0, 
+		30 
+	  )
+	},
+	
 	animationCRC = hashCode("fire_1_special_single_medium_face"),
 
 	combatSpam = "firelightningsingle2",
 
-	range = 16
+	range = 50
 }
 
 AddCommand(FireLightningSingle2Command)
