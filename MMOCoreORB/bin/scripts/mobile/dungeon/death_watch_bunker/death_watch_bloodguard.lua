@@ -3,15 +3,15 @@ death_watch_bloodguard = Creature:new {
 	socialGroup = "death_watch",
 	pvpFaction = "death_watch",
 	faction = "",
-	level = 121,
+	level = 175,
 	chanceHit = 40,
 	damageMin = 745,
 	damageMax = 1200,
 	baseXp = 11390,
 	baseHAM = 50000,
-	baseHAMmax = 50000,
-	armor = 2,
-	resists = {55,55,70,60,30,30,100,40,-1},
+	baseHAMmax = 60000,
+	armor = 1,
+	resists = {55,55,50,50,30,30,50,40,25},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -33,7 +33,14 @@ death_watch_bloodguard = Creature:new {
 				{group = "death_watch_bunker_commoners", chance = 6000000},
 				{group = "death_watch_bunker_lieutenants", chance = 4000000}
 			},
-			lootChance = 1000000
+			lootChance = 1500000
+		},
+		{
+			groups = {
+				{group = "clothing_attachments", chance = 5000000}
+				{group = "clothing_attachments", chance = 5000000},
+			},
+			lootChance = 500000
 		}
 	},
 	weapons = {"pirate_weapons_heavy"},
