@@ -44,7 +44,7 @@
 BodyShot3Command = {
         name = "bodyshot3",
 
-	damageMultiplier = 4,
+	damageMultiplier = 4.5,
 	speedMultiplier = 1,
 	healthCostMultiplier = 0.75,
 	actionCostMultiplier = 1.25,
@@ -52,7 +52,19 @@ BodyShot3Command = {
         accuracyBonus = 50,
 
 	poolsToDamage = HEALTH_ATTRIBUTE,
-
+	
+	stateEffects = {
+	  StateEffect( 
+		STUN_EFFECT, 
+		{}, 
+		{ "stun_defense", "resistance_states" }, 
+		{ "jedi_state_defense" }, 
+		30, 
+		100, 
+		15 
+	  )
+	},
+	
 	animationCRC = hashCode("fire_1_special_single_light"),
 
 	combatSpam = "bodyshot",
