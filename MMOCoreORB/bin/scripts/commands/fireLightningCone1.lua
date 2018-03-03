@@ -50,6 +50,18 @@ FireLightningCone1Command = {
 	actionCostMultiplier = 1,
 	mindCostMultiplier = 1,
 
+	stateEffects = {
+	StateEffect( 
+		STUN_EFFECT, 
+		{}, 
+		{ "stun_defense", "resistance_states" }, 
+		{ "jedi_state_defense" }, 
+		30, 
+		100, 
+		20 
+	  )
+	},
+	
 	animationCRC = hashCode("fire_area_medium"),
 
 	combatSpam = "firelightningcone1",
@@ -57,7 +69,7 @@ FireLightningCone1Command = {
 	coneAngle = 60,
 	coneAction = true,
 
-	range = 16
+	range = 32
 }
 
 AddCommand(FireLightningCone1Command)
