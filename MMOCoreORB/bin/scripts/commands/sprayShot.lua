@@ -77,6 +77,15 @@ SprayShotCommand = {
 		30, 
 		100, 
 		10 
+	  ),
+	  StateEffect( 
+		INTIMIDATE_EFFECT, 
+		{}, 
+		{}, 
+		{ "force_defense" }, 
+		100, 
+		0, 
+		90 
 	  )
 	},
 
