@@ -68,6 +68,7 @@ death_watch_overlord = Creature:new {
 				{group = "pearls_flawless", chance = 6000000}				
 			},
 			lootChance = 9000000
+		}
 		},
 	weapons = {"dark_trooper_weapons"},
 	conversationTemplate = "",
