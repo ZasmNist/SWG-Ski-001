@@ -3,15 +3,15 @@ death_watch_ghost = Creature:new {
 	socialGroup = "death_watch",
 	pvpFaction = "death_watch",
 	faction = "",
-	level = 152,
+	level = 200,
 	chanceHit = 85,
-	damageMin = 895,
-	damageMax = 1500,
-	baseXp = 14314,
-	baseHAM = 110000,
-	baseHAMmax = 110000,
-	armor = 2,
-	resists = {65,65,70,60,35,35,100,50,-1},
+	damageMin = 995,
+	damageMax = 1400,
+	baseXp = 13000,
+	baseHAM = 145000,
+	baseHAMmax = 150000,
+	armor = 1,
+	resists = {50,50,50,50,35,35,50,50,25},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -36,6 +36,13 @@ death_watch_ghost = Creature:new {
 				{group = "death_watch_bunker_ingredient_binary",  chance = 100000}
 			},
 			lootChance = 1500000
+		},
+		{
+			groups = {
+				{group = "clothing_attachments", chance = 5000000}
+				{group = "clothing_attachments", chance = 5000000},
+			},
+			lootChance = 500000
 		}
 	},
 	weapons = {"pirate_weapons_heavy"},
