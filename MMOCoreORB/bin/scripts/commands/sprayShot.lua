@@ -44,7 +44,7 @@
 SprayShotCommand = {
         name = "sprayshot",
 
-	damageMultiplier = 5.0,
+	damageMultiplier = 6.0,
 	speedMultiplier = 3.5,
 	healthCostMultiplier = 1,
 	actionCostMultiplier = 1,
@@ -81,8 +81,8 @@ SprayShotCommand = {
 	  StateEffect( 
 		INTIMIDATE_EFFECT, 
 		{}, 
-		{}, 
-		{ "force_defense" }, 
+		{ "intimidate_defense", "resistance_states" }, 
+		{ "jedi_state_defense" }, 
 		75, 
 		0, 
 		60 
