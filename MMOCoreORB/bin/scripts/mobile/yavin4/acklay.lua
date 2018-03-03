@@ -4,15 +4,15 @@ acklay = Creature:new {
 	socialGroup = "geonosian_creature",
 	pvpFaction = "geonosian_creature",
 	faction = "",
-	level = 157,
+	level = 200,
 	chanceHit = 92.5,
-	damageMin = 935,
-	damageMax = 1580,
-	baseXp = 14884,
-	baseHAM = 96000,
-	baseHAMmax = 118000,
-	armor = 2,
-	resists = {40,45,55,55,45,45,40,40,-1},
+	damageMin = 1335,
+	damageMax = 1980,
+	baseXp = 17884,
+	baseHAM = 126000,
+	baseHAMmax = 168000,
+	armor = 1,
+	resists = {60,60,65,65,60,55,40,40,50},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -29,6 +29,12 @@ acklay = Creature:new {
 
 	templates = {"object/mobile/acklay_hue.iff"},
 	lootGroups = {
+		{
+			groups = {
+				{group = "acklay", chance = 10000000}
+			},
+			lootChance = 7500000
+		},
 		{
 			groups = {
 				{group = "acklay", chance = 10000000}
