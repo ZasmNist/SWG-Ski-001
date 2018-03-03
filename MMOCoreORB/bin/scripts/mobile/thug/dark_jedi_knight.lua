@@ -3,15 +3,15 @@ dark_jedi_knight = Creature:new {
 	socialGroup = "Dark Jedi",
 	pvpFaction = "",
 	faction = "",
-	level = 265,
-	chanceHit = 235,
-	damageMin = 1645,
-	damageMax = 3000,
+	level = 290,
+	chanceHit = 135,
+	damageMin = 1045,
+	damageMax = 1500,
 	baseXp = 25266,
 	baseHAM = 261000,
 	baseHAMmax = 320000,
-	armor = 3,
-	resists = {90,90,90,90,90,90,90,90,-1},
+	armor = 1,
+	resists = {70,70,70,70,70,70,70,70,25},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -32,20 +32,31 @@ dark_jedi_knight = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{group = "holocron_dark", chance = 600000},
-				{group = "holocron_light", chance = 600000},
-				{group = "crystals_premium", chance = 600000},
-				{group = "rifles", chance = 1300000},
-				{group = "pistols", chance = 1300000},
-				{group = "melee_weapons", chance = 1300000},
-				{group = "armor_attachments", chance = 1100000},
-				{group = "clothing_attachments", chance = 1100000},
-				{group = "carbines", chance = 1300000},
-				{group = "wearables_scarce", chance = 800000}			
+				{group = "clothing_attachments", chance = 5000000}
+				{group = "clothing_attachments", chance = 5000000},
 			},
-			lootChance = 7000000
-		}
-	},
+			lootChance = 300000
+		},
+		{
+			groups = {
+				{group = "clothing_attachments", chance = 5000000}
+				{group = "clothing_attachments", chance = 5000000},
+			},
+			lootChance = 300000
+		},
+		{
+			groups = {
+				{group = "axkva_min", chance = 10000000},
+			},
+			lootChance = 3000000
+		},
+		{
+	       		groups = {
+				{group = "krayt_tissue_rare", chance = 4000000},
+				{group = "pearls_flawless", chance = 6000000}				
+			},
+			lootChance = 3000000
+		},
 	weapons = {"dark_jedi_weapons_gen3"},
 	conversationTemplate = "",
 	attacks = merge(lightsabermaster)
