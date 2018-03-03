@@ -3,15 +3,15 @@ death_watch_wraith = Creature:new {
 	socialGroup = "death_watch",
 	pvpFaction = "death_watch",
 	faction = "",
-	level = 178,
-	chanceHit = 122.5,
-	damageMin = 1020,
-	damageMax = 1750,
-	baseXp = 16794,
-	baseHAM = 120000,
-	baseHAMmax = 120000,
-	armor = 2,
-	resists = {75,75,90,80,45,45,100,70,-1},
+	level = 200,
+	chanceHit = 85,
+	damageMin = 1095,
+	damageMax = 1400,
+	baseXp = 13000,
+	baseHAM = 145000,
+	baseHAMmax = 150000,
+	armor = 1,
+	resists = {50,50,50,50,35,35,50,50,25},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -35,7 +35,14 @@ death_watch_wraith = Creature:new {
 				{group = "death_watch_bunker_ingredient_protective",  chance = 100000},
 				{group = "death_watch_bunker_ingredient_binary",  chance = 100000}
 			},
-			lootChance = 1500000
+			lootChance = 2500000
+		},
+		{
+			groups = {
+				{group = "clothing_attachments", chance = 5000000}
+				{group = "clothing_attachments", chance = 5000000},
+			},
+			lootChance = 500000
 		}
 	},
 	weapons = {"pirate_weapons_heavy"},
