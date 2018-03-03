@@ -4,15 +4,15 @@ death_watch_overlord = Creature:new {
 	socialGroup = "death_watch",
 	pvpFaction = "death_watch",
 	faction = "",
-	level = 221,
+	level = 350,
 	chanceHit = 190,
 	damageMin = 1245,
 	damageMax = 2200,
 	baseXp = 20948,
-	baseHAM = 350000,
-	baseHAMmax = 350000,
+	baseHAM = 400000,
+	baseHAMmax = 400000,
 	armor = 3,
-	resists = {80,80,90,80,45,45,100,70,-1},
+	resists = {70,70,70,70,45,45,70,70,5},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -41,8 +41,34 @@ death_watch_overlord = Creature:new {
 				{group = "death_watch_bunker_overlord_quest", chance  = 9500000}
 			},
 			lootChance = 5000000
-		}
-	},
+		},
+		{
+			groups = {
+				{group = "clothing_attachments", chance = 5000000}
+				{group = "clothing_attachments", chance = 5000000},
+			},
+			lootChance = 1000000
+		},
+		{
+			groups = {
+				{group = "clothing_attachments", chance = 5000000}
+				{group = "clothing_attachments", chance = 5000000},
+			},
+			lootChance = 1000000
+		},
+		{
+			groups = {
+				{group = "axkva_min", chance = 10000000},
+			},
+			lootChance = 5000000
+		},
+		{
+	       		groups = {
+				{group = "krayt_tissue_rare", chance = 4000000},
+				{group = "pearls_flawless", chance = 6000000}				
+			},
+			lootChance = 9000000
+		},
 	weapons = {"dark_trooper_weapons"},
 	conversationTemplate = "",
 	attacks = merge(riflemanmaster,pistoleermaster,carbineermaster,brawlermaster)
