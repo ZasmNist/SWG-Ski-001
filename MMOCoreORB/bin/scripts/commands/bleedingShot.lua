@@ -56,7 +56,7 @@ BleedingShotCommand = {
 		{}, 
 		{ "dizzy_defense", "resistance_states" }, 
 		{ "jedi_state_defense" }, 
-		30, 
+		97, 
 		100, 
 		30 
 	  )
