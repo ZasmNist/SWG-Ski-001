@@ -75,6 +75,21 @@ KnockdownFireCommand = {
 
 	combatSpam = "knockdownfire",
 
+	dotEffects = {
+	  DotEffect( 
+		ONFIRE, 
+		{ "resistance_fire", "fire_resist" },
+		HEALTH,
+		true,
+		200,
+		100,
+		30, 
+		30,
+		10,
+		2
+	  )
+	},
+	
 	range = -1
 }
 
