@@ -56,7 +56,7 @@ TorsoShotCommand = {
 		{}, 
 		{ "intimidate_defense", "resistance_states" }, 
 		{ "jedi_state_defense" }, 
-		50, 
+		97, 
 		0, 
 		30 
 	  )
@@ -74,8 +74,8 @@ TorsoShotCommand = {
 		{ "resistance_fire", "fire_resist" },
 		HEALTH,
 		true,
+		60,
 		200,
-		100,
 		30, 
 		30,
 		10,
