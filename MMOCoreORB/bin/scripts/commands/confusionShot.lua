@@ -74,7 +74,7 @@ ConfusionShotCommand = {
 		{}, 
 		{ "intimidate_defense", "resistance_states" }, 
 		{ "jedi_state_defense" }, 
-		75, 
+		97, 
 		0, 
 		60 
 	  )
