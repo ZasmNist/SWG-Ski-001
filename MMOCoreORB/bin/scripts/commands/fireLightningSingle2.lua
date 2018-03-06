@@ -52,6 +52,15 @@ FireLightningSingle2Command = {
 
 	stateEffects = {
 	StateEffect( 
+		DIZZY_EFFECT, 
+		{}, 
+		{ "dizzy_defense", "resistance_states" }, 
+		{ "jedi_state_defense" }, 
+		60, 
+		100, 
+		30 
+	  ),	
+	StateEffect( 
 		STUN_EFFECT, 
 		{}, 
 		{ "stun_defense", "resistance_states" }, 
@@ -65,7 +74,7 @@ FireLightningSingle2Command = {
 		{}, 
 		{ "intimidate_defense", "resistance_states" }, 
 		{ "jedi_state_defense" }, 
-		50, 
+		97, 
 		0, 
 		30 
 	  )
