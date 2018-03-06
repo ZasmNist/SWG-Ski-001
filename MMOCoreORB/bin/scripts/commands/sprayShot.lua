@@ -83,7 +83,7 @@ SprayShotCommand = {
 		{}, 
 		{ "intimidate_defense", "resistance_states" }, 
 		{ "jedi_state_defense" }, 
-		75, 
+		103, 
 		0, 
 		60 
 	  )
