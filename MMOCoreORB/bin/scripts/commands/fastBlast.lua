@@ -65,7 +65,7 @@ FastBlastCommand = {
 		{}, 
 		{ "resistance_states", "intimidate_defense" }, 
 		{ "jedi_state_defense" }, 
-		105, 
+		103, 
 		0, 
 		60 
 	  )
