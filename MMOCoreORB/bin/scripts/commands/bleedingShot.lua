@@ -52,13 +52,13 @@ BleedingShotCommand = {
 
 	stateEffects = {
 	  StateEffect( 
-		STUN_EFFECT, 
+		DIZZY_EFFECT, 
 		{}, 
-		{ "stun_defense", "resistance_states" }, 
+		{ "dizzy_defense", "resistance_states" }, 
 		{ "jedi_state_defense" }, 
 		30, 
 		100, 
-		15 
+		30 
 	  )
 	},
 	
@@ -70,12 +70,12 @@ BleedingShotCommand = {
 	  DotEffect( 
 		BLEEDING, 
 		{ "resistance_bleeding", "bleed_resist" },
-		MIND,
+		HEALTH,
 		true,
+		60,
 		200,
-		100,
-		30, 
-		30
+		60, 
+		60
 	  )
 	},
 
