@@ -3,15 +3,15 @@ death_watch_s_battle_droid = Creature:new {
 	socialGroup = "death_watch",
 	pvpFaction = "death_watch",
 	faction = "",
-	level = 200,
+	level = 180,
 	chanceHit = 18,
 	damageMin = 1200,
 	damageMax = 2300,
 	baseXp = 19000,
-	baseHAM = 230000,
-	baseHAMmax = 230000,
-	armor = 2,
-	resists = {85,95,100,60,100,25,40,85,-1},--kinetic,energy,blast,heat,cold,electric,acid,stun,ls
+	baseHAM = 90000,
+	baseHAMmax = 100000,
+	armor = 1,
+	resists = {55,50,60,60,25,25,40,25,50},--kinetic,energy,blast,heat,cold,electric,acid,stun,ls
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -23,8 +23,9 @@ death_watch_s_battle_droid = Creature:new {
 	ferocity = 0,
 	pvpBitmask = AGGRESSIVE + ATTACKABLE + ENEMY,
 	creatureBitmask = KILLER,
-	optionsBitmask = 128,
+	optionsBitmask = AIENABLED,
 	diet = NONE,
+	scale = 1.40,
 
 	templates = {
 		"object/mobile/death_watch_s_battle_droid.iff",
@@ -40,7 +41,7 @@ death_watch_s_battle_droid = Creature:new {
 	},
 	conversationTemplate = "",
 	defaultWeapon = "object/weapon/ranged/droid/droid_droideka_ranged.iff",
-	defaultAttack = "creaturerangedattack"
+	defaultAttack = "attack"
 }
 
 CreatureTemplates:addCreatureTemplate(death_watch_s_battle_droid, "death_watch_s_battle_droid")
