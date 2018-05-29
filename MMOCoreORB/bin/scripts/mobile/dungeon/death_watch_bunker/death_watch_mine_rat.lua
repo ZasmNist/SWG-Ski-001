@@ -1,21 +1,20 @@
 death_watch_mine_rat = Creature:new {
 	objectName = "@mob/creature_names:death_watch_quenker",
 	socialGroup = "death_watch",
-	pvpFaction = "death_watch",
 	faction = "",
-	level = 130,
+	level = 102,
 	chanceHit = 1,
 	damageMin = 645,
 	damageMax = 1000,
 	baseXp = 9708,
-	baseHAM = 25000,
-	baseHAMmax = 25000,
-	armor = 0,
-	resists = {45,45,65,35,35,35,70,35,30},
+	baseHAM = 24000,
+	baseHAMmax = 30000,
+	armor = 1,
+	resists = {55,55,50,35,35,35,10,15,15},
 	meatType = "meat_wild",
-	meatAmount = 130,
+	meatAmount = 200,
 	hideType = "hide_scaley",
-	hideAmount = 130,
+	hideAmount = 200,
 	boneType = "",
 	boneAmount = 0,
 	milk = 0,
@@ -23,7 +22,7 @@ death_watch_mine_rat = Creature:new {
 	ferocity = 0,
 	pvpBitmask = AGGRESSIVE + ATTACKABLE + ENEMY,
 	creatureBitmask = PACK + KILLER,
-	optionsBitmask = 128,
+	optionsBitmask = AIENABLED,
 	diet = CARNIVORE,
 
 	templates = {"object/mobile/womp_rat.iff"},
@@ -31,8 +30,8 @@ death_watch_mine_rat = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"intimidationattack","intimidationChance=50"},
-		{"knockdownattack","knockdownChance=50"}
+		{"intimidationattack",""},
+		{"knockdownattack",""}
 	}
 }
 
