@@ -449,16 +449,16 @@ TERMINALSKILLS = {
 	"",
 	"",
 	"",
-	"crafting_armorsmith_master",
-	"crafting_droidengineer_master",
-	"crafting_tailor_master",
-	"crafting_artisan_master"}
+	"",
+	"",
+	"",
+	""}
 
 TERMINALSKILLMESSAGE = {
-	"@dungeon/death_watch:master_armorsmith_required",
-	"@dungeon/death_watch:master_droidengineer_required",
-	"@dungeon/death_watch:master_tailor_required",
-	"@dungeon/death_watch:master_artisan_required"}
+	"",
+	"",
+	"",
+	""}
 
 PARTSTRINGS = {
 	"@dungeon/death_watch:armorsmith_items",
@@ -466,16 +466,16 @@ PARTSTRINGS = {
 	"@dungeon/death_watch:tailored_items"
 	}
 
-LOCKTIME = {10,10,10,10,6,6,6}
+LOCKTIME = {15,15,15,15,15,15,15}
 
 MISSINGSKILL = {
 	"",
 	"",
 	"",
 	"",
-	"@dungeon/death_watch:not_enough_armorsmith_skill",
-	"@dungeon/death_watch:not_enough_droidengineer_skill",
-	"@dungeon/death_watch:not_enough_tailor_skill"}
+	"",
+	"",
+	""}
 
 DOORTYPE = {1,2,2,2,3,3,3}
 
