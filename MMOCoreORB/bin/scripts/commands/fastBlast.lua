@@ -44,7 +44,7 @@
 FastBlastCommand = {
         name = "fastblast",
 
-	damageMultiplier = 6.0,
+	damageMultiplier = 5.0,
 	speedMultiplier = 3.0,
 	healthCostMultiplier = 1,
 	actionCostMultiplier = 1,
@@ -65,7 +65,7 @@ FastBlastCommand = {
 		{}, 
 		{ "resistance_states", "intimidate_defense" }, 
 		{ "jedi_state_defense" }, 
-		103, 
+		100, 
 		0, 
 		60 
 	  )
