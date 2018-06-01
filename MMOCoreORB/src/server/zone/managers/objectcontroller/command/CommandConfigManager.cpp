@@ -733,6 +733,7 @@ void CommandConfigManager::registerCommands() {
 	commandFactory.registerCommand<BetCommand>(String("bet").toLowerCase());
 	commandFactory.registerCommand<BleedingShotCommand>(String("bleedingShot").toLowerCase());
 	commandFactory.registerCommand<BlindAttackCommand>(String("blindAttack").toLowerCase());
+	commandFactory.registerCommand<BloodSportCommand>(String("bloodSport").toLowerCase());
 	commandFactory.registerCommand<BoardShuttleCommand>(String("boardShuttle").toLowerCase());
 	commandFactory.registerCommand<BodyShot1Command>(String("bodyShot1").toLowerCase());
 	commandFactory.registerCommand<BodyShot2Command>(String("bodyShot2").toLowerCase());
