@@ -50,6 +50,7 @@
 #include "BetCommand.h"
 #include "BleedingShotCommand.h"
 #include "BlindAttackCommand.h"
+#include "BloodSportCommand.h"
 #include "BoardShuttleCommand.h"
 #include "BodyShot1Command.h"
 #include "BodyShot2Command.h"
