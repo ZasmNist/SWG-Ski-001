@@ -1,17 +1,17 @@
-death_watch_s_battle_droid_alt = Creature:new {
+death_watch_s_battle_droid = Creature:new {
 	objectName = "@mob/creature_names:mand_bunker_super_battle_droid",
 	socialGroup = "death_watch",
 	pvpFaction = "death_watch",
 	faction = "",
-	level = 200,
+	level = 180,
 	chanceHit = 18,
-	damageMin = 900,
-	damageMax = 1900,
-	baseXp = 15000,
-	baseHAM = 100000,
-	baseHAMmax = 110000,
-	armor = 2,
-	resists = {60,60,60,60,60,25,40,60,5},--kinetic,energy,blast,heat,cold,electric,acid,stun,ls
+	damageMin = 1200,
+	damageMax = 2300,
+	baseXp = 19000,
+	baseHAM = 90000,
+	baseHAMmax = 100000,
+	armor = 1,
+	resists = {55,50,60,60,25,25,40,25,50},--kinetic,energy,blast,heat,cold,electric,acid,stun,ls
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -21,10 +21,11 @@ death_watch_s_battle_droid_alt = Creature:new {
 	milk = 0,
 	tamingChance = 0,
 	ferocity = 0,
-	pvpBitmask = AGGRESSIVE + ATTACKABLE,
+	pvpBitmask = AGGRESSIVE + ATTACKABLE + ENEMY,
 	creatureBitmask = KILLER,
-	optionsBitmask = 128,
+	optionsBitmask = AIENABLED,
 	diet = NONE,
+	scale = 1.40,
 
 	templates = {
 		"object/mobile/death_watch_s_battle_droid.iff",
@@ -36,18 +37,11 @@ death_watch_s_battle_droid_alt = Creature:new {
 				{group = "death_watch_bunker_commoners", chance = 10000000}
 			},
 			lootChance = 500000
-		},
-		{
-			groups = {
-				{group = "clothing_attachments", chance = 5000000}
-				{group = "clothing_attachments", chance = 5000000},
-			},
-			lootChance = 500000
 		}
 	},
 	conversationTemplate = "",
 	defaultWeapon = "object/weapon/ranged/droid/droid_droideka_ranged.iff",
-	defaultAttack = "creaturerangedattack"
+	defaultAttack = "attack"
 }
 
-CreatureTemplates:addCreatureTemplate(death_watch_s_battle_droid_alt, "death_watch_s_battle_droid_alt")
+CreatureTemplates:addCreatureTemplate(death_watch_s_battle_droid, "death_watch_s_battle_droid")

@@ -1,0 +1,56 @@
+--By Matt
+
+BloodSportCommand = {
+        name = "bloodsport",
+        
+  damageMultiplier = 4.5,
+	speedMultiplier = 3.0,
+  healthCostMultiplier = 1,
+	actionCostMultiplier = 1,
+	mindCostMultiplier = 1,
+	accuracyBonus = 20,
+	areaRange = 7,
+	areaAction = true,
+	
+		stateEffects = {
+	   StateEffect( 
+		BLIND_EFFECT, 
+		{}, 
+		{ "blind_defense", "resistance_states" }, 
+		{ "jedi_state_defense" }, 
+		30, 
+		100, 
+		10 
+	  ),
+    
+	  StateEffect( 
+		DIZZY_EFFECT, 
+		{}, 
+		{ "dizzy_defense", "resistance_states" }, 
+		{ "jedi_state_defense" }, 
+		30, 
+		100, 
+		10 
+	  ),
+    
+	  StateEffect( 
+		STUN_EFFECT, 
+		{}, 
+		{ "stun_defense", "resistance_states" }, 
+		{ "jedi_state_defense" }, 
+		30, 
+		100, 
+		10 
+	  )
+	},
+
+	animationCRC = hashCode("showoff_2_light"),
+
+	combatSpam = "bloodsport",
+	
+	poolsToDamage = RANDOM_ATTRIBUTE,
+
+	range = -1
+}
+
+AddCommand(BloodSportCommand)

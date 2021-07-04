@@ -1,17 +1,18 @@
 death_watch_ghost = Creature:new {
 	objectName = "@mob/creature_names:mand_bunker_dthwatch_grey",
+	randomNameType = NAME_GENERIC,
+	randomNameTag = true,
 	socialGroup = "death_watch",
-	pvpFaction = "death_watch",
 	faction = "",
-	level = 200,
-	chanceHit = 85,
-	damageMin = 995,
-	damageMax = 1400,
-	baseXp = 13000,
-	baseHAM = 145000,
-	baseHAMmax = 150000,
+	level = 152,
+	chanceHit = 8.5,
+	damageMin = 895,
+	damageMax = 1500,
+	baseXp = 14314,
+	baseHAM = 70000,
+	baseHAMmax = 80000,
 	armor = 1,
-	resists = {50,50,50,50,35,35,50,50,25},
+	resists = {40,65,40,35,5,25,30,15,25},--kinetic,energy,blast,heat,cold,electric,acid,stun,ls
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -23,8 +24,9 @@ death_watch_ghost = Creature:new {
 	ferocity = 0,
 	pvpBitmask = AGGRESSIVE + ATTACKABLE + ENEMY,
 	creatureBitmask = KILLER,
-	optionsBitmask = 128,
+	optionsBitmask = AIENABLED,
 	diet = HERBIVORE,
+	scale = 1.15,
 
 	templates = {"object/mobile/dressed_death_watch_grey.iff"},
 	lootGroups = {
@@ -36,22 +38,11 @@ death_watch_ghost = Creature:new {
 				{group = "death_watch_bunker_ingredient_binary",  chance = 100000}
 			},
 			lootChance = 1500000
-		},
-		{
-			groups = {
-				{group = "clothing_attachments", chance = 5000000}
-				{group = "clothing_attachments", chance = 5000000},
-			},
-			lootChance = 500000
 		}
 	},
 	weapons = {"pirate_weapons_heavy"},
 	conversationTemplate = "",
-	attacks = {
-		{"defaultattack", ""},
-		{"intimidationattack","intimidationChance=50"},
-		{"knockdownattack","knockdownChance=50"}
-	}
+	attacks = merge(bountyhuntermaster,marksmanmaster,brawlermaster,pikemanmaster,fencermaster,swordsmanmaster)
 }
 
 CreatureTemplates:addCreatureTemplate(death_watch_ghost, "death_watch_ghost")
